@@ -141,7 +141,7 @@ export default function LoanCalculator() {
               </div>
 
               {/* Right Side - Calculation Results */}
-              <div className="bg-gray-50 rounded-xl p-6 space-y-4">
+              <div className="bg-gray-50 rounded-xl p-4 sm:p-6 space-y-4">
                 {/* Monthly Payment */}
                 <div className="flex justify-between items-center">
                   <span className="text-sm font-semibold text-gray-600 font-dm-sans">Monthly repayment</span>
