@@ -19,12 +19,14 @@ export default function HeroSection() {
           <div className="space-y-6 text-center lg:text-left">
             <div className="space-y-4">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-navy-dark font-dm-sans leading-tight">
-                Singapore's Trusted<br />
+                Singapore's Trusted
+                <br />
                 <span className="text-navy">Licensed Money Lender</span>
               </h1>
 
               <p className="text-base sm:text-lg text-gray-600 font-inter max-w-lg mx-auto lg:mx-0">
-                Transparent and reliable loan solutions for all your financial needs.
+                Transparent and reliable loan solutions for all your financial
+                needs.
               </p>
             </div>
 
@@ -56,7 +58,8 @@ export default function HeroSection() {
 
             {/* License Info */}
             <p className="text-sm text-gray-500 font-inter">
-              Bugis Credit Pte Ltd is a licensed moneylender (License No. 27/2025)
+              Bugis Credit Pte Ltd is a licensed moneylender (License No.
+              27/2025)
             </p>
           </div>
 

@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,7 +9,9 @@ export default function Header() {
       {/* Top Banner */}
       <div className="bg-navy-dark text-center py-2 px-4">
         <p className="text-xs sm:text-sm text-gray-300 font-inter font-bold leading-relaxed">
-          Bugis Credit Pte Ltd is a licensed moneylender (License No. 27/2025) listed in the Registry of Moneylenders, under the Ministry of Law in Singapore.
+          Bugis Credit Pte Ltd is a licensed moneylender (License No. 27/2025)
+          listed in the Registry of Moneylenders, under the Ministry of Law in
+          Singapore.
         </p>
       </div>
 
@@ -20,12 +22,18 @@ export default function Header() {
             {/* Logo */}
             <div className="flex items-center space-x-2 sm:space-x-3">
               <div className="w-10 h-10 sm:w-11 sm:h-11 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-base sm:text-lg">B</span>
+                <span className="text-white font-bold text-base sm:text-lg">
+                  B
+                </span>
               </div>
               <div className="flex flex-col">
                 <div className="flex items-center space-x-1">
-                  <span className="text-xl sm:text-2xl font-bold text-navy-dark font-inter">Bugis</span>
-                  <span className="text-xl sm:text-2xl font-normal text-navy-light font-inter">Credit</span>
+                  <span className="text-xl sm:text-2xl font-bold text-navy-dark font-inter">
+                    Bugis
+                  </span>
+                  <span className="text-xl sm:text-2xl font-normal text-navy-light font-inter">
+                    Credit
+                  </span>
                 </div>
                 <span className="text-xs text-gray-400 font-inter uppercase tracking-wide hidden sm:block">
                   Licensed Moneylender Since 2007
@@ -35,22 +43,40 @@ export default function Header() {
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
-              <a href="#" className="flex items-center space-x-1 text-gray-600 hover:text-navy text-sm font-medium font-inter transition-colors">
+              <a
+                href="#"
+                className="flex items-center space-x-1 text-gray-600 hover:text-navy text-sm font-medium font-inter transition-colors"
+              >
                 <span>Home</span>
               </a>
-              <a href="#" className="text-gray-600 hover:text-navy text-sm font-medium font-inter transition-colors">
+              <a
+                href="#"
+                className="text-gray-600 hover:text-navy text-sm font-medium font-inter transition-colors"
+              >
                 About Us
               </a>
-              <a href="#" className="text-gray-600 hover:text-navy text-sm font-medium font-inter transition-colors">
+              <a
+                href="#"
+                className="text-gray-600 hover:text-navy text-sm font-medium font-inter transition-colors"
+              >
                 Types Of Loans
               </a>
-              <a href="#" className="text-gray-600 hover:text-navy text-sm font-medium font-inter transition-colors">
+              <a
+                href="#"
+                className="text-gray-600 hover:text-navy text-sm font-medium font-inter transition-colors"
+              >
                 Portfolio
               </a>
-              <a href="#" className="text-gray-600 hover:text-navy text-sm font-medium font-inter transition-colors">
+              <a
+                href="#"
+                className="text-gray-600 hover:text-navy text-sm font-medium font-inter transition-colors"
+              >
                 Blog
               </a>
-              <a href="#" className="text-gray-600 hover:text-navy text-sm font-medium font-inter transition-colors">
+              <a
+                href="#"
+                className="text-gray-600 hover:text-navy text-sm font-medium font-inter transition-colors"
+              >
                 Contact
               </a>
             </nav>
@@ -76,22 +102,40 @@ export default function Header() {
         {isMenuOpen && (
           <div className="lg:hidden border-t border-gray-200">
             <div className="px-4 py-3 space-y-3">
-              <a href="#" className="block text-gray-600 hover:text-navy text-sm font-medium font-inter">
+              <a
+                href="#"
+                className="block text-gray-600 hover:text-navy text-sm font-medium font-inter"
+              >
                 Home
               </a>
-              <a href="#" className="block text-gray-600 hover:text-navy text-sm font-medium font-inter">
+              <a
+                href="#"
+                className="block text-gray-600 hover:text-navy text-sm font-medium font-inter"
+              >
                 About Us
               </a>
-              <a href="#" className="block text-gray-600 hover:text-navy text-sm font-medium font-inter">
+              <a
+                href="#"
+                className="block text-gray-600 hover:text-navy text-sm font-medium font-inter"
+              >
                 Types Of Loans
               </a>
-              <a href="#" className="block text-gray-600 hover:text-navy text-sm font-medium font-inter">
+              <a
+                href="#"
+                className="block text-gray-600 hover:text-navy text-sm font-medium font-inter"
+              >
                 Portfolio
               </a>
-              <a href="#" className="block text-gray-600 hover:text-navy text-sm font-medium font-inter">
+              <a
+                href="#"
+                className="block text-gray-600 hover:text-navy text-sm font-medium font-inter"
+              >
                 Blog
               </a>
-              <a href="#" className="block text-gray-600 hover:text-navy text-sm font-medium font-inter">
+              <a
+                href="#"
+                className="block text-gray-600 hover:text-navy text-sm font-medium font-inter"
+              >
                 Contact
               </a>
               <button className="w-full bg-navy hover:bg-navy-dark text-white px-6 py-2 rounded-full text-sm font-bold font-inter transition-colors mt-4">

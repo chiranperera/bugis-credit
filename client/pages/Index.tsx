@@ -1,6 +1,6 @@
-import Header from '../components/Header';
-import HeroSection from '../components/HeroSection';
-import LoanCalculator from '../components/LoanCalculator';
+import Header from "../components/Header";
+import HeroSection from "../components/HeroSection";
+import LoanCalculator from "../components/LoanCalculator";
 
 export default function Index() {
   return (

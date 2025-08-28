@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 interface LoanCalculation {
   monthlyPayment: number;
@@ -15,15 +15,15 @@ export default function LoanCalculator() {
     monthlyPayment: 2222,
     totalRepayment: 133320,
     totalInterest: 13320,
-    effectiveInterestRate: 3.8
+    effectiveInterestRate: 3.8,
   });
 
   // Calculate loan payments
   useEffect(() => {
     const principal = loanAmount;
-    const monthlyRate = (interestRate / 100) / 12;
+    const monthlyRate = interestRate / 100 / 12;
     const numPayments = loanTerm;
-    
+
     if (monthlyRate === 0) {
       // Handle 0% interest rate
       const monthlyPayment = principal / numPayments;
@@ -31,27 +31,28 @@ export default function LoanCalculator() {
         monthlyPayment: monthlyPayment,
         totalRepayment: principal,
         totalInterest: 0,
-        effectiveInterestRate: 0
+        effectiveInterestRate: 0,
       });
     } else {
       // Standard loan calculation formula
-      const monthlyPayment = principal * (monthlyRate * Math.pow(1 + monthlyRate, numPayments)) / 
-                            (Math.pow(1 + monthlyRate, numPayments) - 1);
+      const monthlyPayment =
+        (principal * (monthlyRate * Math.pow(1 + monthlyRate, numPayments))) /
+        (Math.pow(1 + monthlyRate, numPayments) - 1);
       const totalRepayment = monthlyPayment * numPayments;
       const totalInterest = totalRepayment - principal;
       const effectiveRate = (totalInterest / principal) * (12 / loanTerm) * 100;
-      
+
       setCalculation({
         monthlyPayment: monthlyPayment,
         totalRepayment: totalRepayment,
         totalInterest: totalInterest,
-        effectiveInterestRate: effectiveRate
+        effectiveInterestRate: effectiveRate,
       });
     }
   }, [loanAmount, loanTerm, interestRate]);
 
   const formatCurrency = (amount: number) => {
-    return `S$${amount.toLocaleString('en-SG', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+    return `S$${amount.toLocaleString("en-SG", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
   };
 
   const formatPercentage = (rate: number) => {
@@ -106,7 +107,7 @@ export default function LoanCalculator() {
                         onChange={(e) => setLoanTerm(Number(e.target.value))}
                         className="w-full h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer loan-slider"
                         style={{
-                          background: `linear-gradient(to right, hsl(var(--gold)) 0%, hsl(var(--gold)) ${((loanTerm - 3) / (60 - 3)) * 100}%, #e5e7eb ${((loanTerm - 3) / (60 - 3)) * 100}%, #e5e7eb 100%)`
+                          background: `linear-gradient(to right, hsl(var(--gold)) 0%, hsl(var(--gold)) ${((loanTerm - 3) / (60 - 3)) * 100}%, #e5e7eb ${((loanTerm - 3) / (60 - 3)) * 100}%, #e5e7eb 100%)`,
                         }}
                       />
                       <div className="flex justify-between text-sm text-gray-500 mt-2 font-dm-sans font-semibold">
@@ -129,8 +130,8 @@ export default function LoanCalculator() {
                         onClick={() => setInterestRate(rate)}
                         className={`px-2 sm:px-3 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-colors ${
                           interestRate === rate
-                            ? 'bg-gold text-navy-dark'
-                            : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                            ? "bg-gold text-navy-dark"
+                            : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                         }`}
                       >
                         {rate}%
@@ -144,7 +145,9 @@ export default function LoanCalculator() {
               <div className="bg-gray-50 rounded-xl p-4 sm:p-6 space-y-4">
                 {/* Monthly Payment */}
                 <div className="flex justify-between items-center">
-                  <span className="text-sm font-semibold text-gray-600 font-dm-sans">Monthly repayment</span>
+                  <span className="text-sm font-semibold text-gray-600 font-dm-sans">
+                    Monthly repayment
+                  </span>
                   <span className="text-sm font-bold text-gray-700 font-dm-sans">
                     {formatCurrency(calculation.monthlyPayment)}
                   </span>
@@ -152,7 +155,9 @@ export default function LoanCalculator() {
 
                 {/* Total Repayment */}
                 <div className="flex justify-between items-center">
-                  <span className="text-sm font-semibold text-gray-600 font-dm-sans">Total repayment</span>
+                  <span className="text-sm font-semibold text-gray-600 font-dm-sans">
+                    Total repayment
+                  </span>
                   <span className="text-sm font-bold text-gray-700 font-dm-sans">
                     {formatCurrency(calculation.totalRepayment)}
                   </span>
@@ -160,9 +165,12 @@ export default function LoanCalculator() {
 
                 {/* Interest Rate */}
                 <div className="flex justify-between items-center">
-                  <span className="text-sm font-semibold text-gray-600 font-dm-sans">Interest</span>
+                  <span className="text-sm font-semibold text-gray-600 font-dm-sans">
+                    Interest
+                  </span>
                   <span className="text-sm font-bold text-gray-700 font-dm-sans">
-                    {formatPercentage(interestRate)}(EIR {formatPercentage(calculation.effectiveInterestRate)} p.a.)
+                    {formatPercentage(interestRate)}(EIR{" "}
+                    {formatPercentage(calculation.effectiveInterestRate)} p.a.)
                   </span>
                 </div>
 
@@ -173,8 +181,9 @@ export default function LoanCalculator() {
 
                 {/* Disclaimer */}
                 <p className="text-xs text-gray-500 text-center leading-relaxed font-dm-sans font-semibold mt-4">
-                  Bugis Credit Pte Ltd is a licensed moneylender (License No. 27/2025) listed in the
-                  [Registry of Moneylenders], under the Ministry of Law in Singapore.
+                  Bugis Credit Pte Ltd is a licensed moneylender (License No.
+                  27/2025) listed in the [Registry of Moneylenders], under the
+                  Ministry of Law in Singapore.
                 </p>
               </div>
             </div>
@@ -188,32 +197,32 @@ export default function LoanCalculator() {
           height: 20px;
           width: 20px;
           border-radius: 50%;
-          background: #FEDC00;
+          background: #fedc00;
           cursor: pointer;
           border: 2px solid white;
-          box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
           transition: all 0.2s ease;
         }
 
         .loan-slider::-webkit-slider-thumb:hover {
           transform: scale(1.1);
-          box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
 
         .loan-slider::-moz-range-thumb {
           height: 20px;
           width: 20px;
           border-radius: 50%;
-          background: #FEDC00;
+          background: #fedc00;
           cursor: pointer;
           border: 2px solid white;
-          box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
           transition: all 0.2s ease;
         }
 
         .loan-slider::-moz-range-thumb:hover {
           transform: scale(1.1);
-          box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
       `}</style>
     </section>
