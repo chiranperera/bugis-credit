@@ -183,25 +183,37 @@ export default function LoanCalculator() {
       </div>
 
       <style jsx>{`
-        .slider::-webkit-slider-thumb {
+        .loan-slider::-webkit-slider-thumb {
           appearance: none;
           height: 20px;
           width: 20px;
           border-radius: 50%;
-          background: hsl(var(--gold));
+          background: #FEDC00;
           cursor: pointer;
           border: 2px solid white;
           box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+          transition: all 0.2s ease;
         }
 
-        .slider::-moz-range-thumb {
+        .loan-slider::-webkit-slider-thumb:hover {
+          transform: scale(1.1);
+          box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .loan-slider::-moz-range-thumb {
           height: 20px;
           width: 20px;
           border-radius: 50%;
-          background: hsl(var(--gold));
+          background: #FEDC00;
           cursor: pointer;
           border: 2px solid white;
           box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+          transition: all 0.2s ease;
+        }
+
+        .loan-slider::-moz-range-thumb:hover {
+          transform: scale(1.1);
+          box-shadow: 0 4px 8px rgba(0,0,0,0.3);
         }
       `}</style>
     </section>
