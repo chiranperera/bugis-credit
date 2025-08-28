@@ -59,15 +59,15 @@ export default function LoanCalculator() {
   };
 
   return (
-    <section className="bg-gray-50 py-16">
+    <section className="bg-gray-50 py-12 sm:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-          <div className="p-8 lg:p-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-navy-dark text-center mb-8 font-dm-sans">
+          <div className="p-6 sm:p-8 lg:p-12">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-navy-dark text-center mb-6 sm:mb-8 font-dm-sans">
               Get a Credible Loan
             </h2>
-            
-            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+
+            <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
               {/* Left Side - Input Controls */}
               <div className="space-y-6">
                 {/* Loan Amount */}
