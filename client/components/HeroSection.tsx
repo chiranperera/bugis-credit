@@ -55,18 +55,18 @@ export default function HeroSection() {
           </div>
 
           {/* Hero Image */}
-          <div className="relative lg:h-96">
+          <div className="relative h-64 sm:h-80 lg:h-96 mt-8 lg:mt-0">
             <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-3xl transform rotate-3 opacity-10"></div>
             <div className="relative bg-gradient-to-br from-yellow-400 via-yellow-500 to-orange-400 rounded-3xl h-full flex items-end justify-center overflow-hidden">
               {/* Placeholder for person image - using a styled div for now */}
-              <div className="w-64 h-80 bg-gradient-to-t from-yellow-600 to-yellow-300 rounded-t-full opacity-70 relative">
-                <div className="absolute top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-yellow-200 rounded-full"></div>
-                <div className="absolute top-20 left-1/2 transform -translate-x-1/2 w-12 h-20 bg-yellow-300 rounded-lg"></div>
-                <div className="absolute top-32 left-1/2 transform -translate-x-1/2 w-20 h-12 bg-white rounded-lg opacity-80"></div>
+              <div className="w-40 h-48 sm:w-56 sm:h-64 lg:w-64 lg:h-80 bg-gradient-to-t from-yellow-600 to-yellow-300 rounded-t-full opacity-70 relative">
+                <div className="absolute top-4 sm:top-6 lg:top-8 left-1/2 transform -translate-x-1/2 w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-yellow-200 rounded-full"></div>
+                <div className="absolute top-12 sm:top-16 lg:top-20 left-1/2 transform -translate-x-1/2 w-10 h-14 sm:w-11 sm:h-16 lg:w-12 lg:h-20 bg-yellow-300 rounded-lg"></div>
+                <div className="absolute top-20 sm:top-26 lg:top-32 left-1/2 transform -translate-x-1/2 w-14 h-8 sm:w-16 sm:h-10 lg:w-20 lg:h-12 bg-white rounded-lg opacity-80"></div>
               </div>
-              
+
               {/* City skyline background */}
-              <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-blue-200 to-transparent opacity-30"></div>
+              <div className="absolute bottom-0 left-0 right-0 h-20 sm:h-24 lg:h-32 bg-gradient-to-t from-blue-200 to-transparent opacity-30"></div>
             </div>
           </div>
         </div>
