@@ -122,12 +122,12 @@ export default function LoanCalculator() {
                   <label className="block text-sm font-semibold text-gray-600 font-dm-sans">
                     Choose Your Interest Rate: 1%, 2%, 3%, 4%, 5%
                   </label>
-                  <div className="grid grid-cols-5 gap-2">
+                  <div className="grid grid-cols-5 gap-1 sm:gap-2">
                     {[1, 2, 3, 4, 5].map((rate) => (
                       <button
                         key={rate}
                         onClick={() => setInterestRate(rate)}
-                        className={`px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
+                        className={`px-2 sm:px-3 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-colors ${
                           interestRate === rate
                             ? 'bg-gold text-navy-dark'
                             : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
