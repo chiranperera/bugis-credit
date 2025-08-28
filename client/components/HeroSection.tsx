@@ -1,17 +1,17 @@
 export default function HeroSection() {
   return (
     <section className="relative bg-gradient-to-br from-blue-50 to-gray-100 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Content */}
-          <div className="space-y-6">
+          <div className="space-y-6 text-center lg:text-left">
             <div className="space-y-4">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-navy-dark font-dm-sans leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-navy-dark font-dm-sans leading-tight">
                 Singapore's Trusted<br />
                 <span className="text-navy">Licensed Money Lender</span>
               </h1>
-              
-              <p className="text-lg text-gray-600 font-inter max-w-lg">
+
+              <p className="text-base sm:text-lg text-gray-600 font-inter max-w-lg mx-auto lg:mx-0">
                 Transparent and reliable loan solutions for all your financial needs.
               </p>
             </div>
