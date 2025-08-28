@@ -1,9 +1,21 @@
 export default function HeroSection() {
   return (
-    <section className="relative bg-gradient-to-br from-blue-50 to-gray-100 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24">
+    <section className="relative overflow-hidden min-h-[600px] lg:min-h-[700px]">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets%2F059469419a6e42e4b9f17b418abfa1f3%2Fc21dac515cdc4a5090590166431634af?format=webp&width=1920"
+          alt="Hero Background"
+          className="w-full h-full object-cover object-right"
+        />
+        {/* Gradient Overlay on the left side */}
+        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent lg:from-white lg:via-white/95 lg:to-white/20"></div>
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          {/* Content */}
+          {/* Left Content */}
           <div className="space-y-6 text-center lg:text-left">
             <div className="space-y-4">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-navy-dark font-dm-sans leading-tight">
@@ -16,35 +28,29 @@ export default function HeroSection() {
               </p>
             </div>
 
-            {/* Apply Now Button */}
+            {/* Apply Now Button and Logos */}
             <div className="flex flex-col sm:flex-row items-center sm:items-center gap-4 lg:justify-start justify-center">
               <button className="bg-gold hover:bg-gold-border text-navy-dark px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-bold font-inter transition-colors shadow-lg hover:shadow-xl">
                 Apply Now
               </button>
 
-              {/* Trust Indicators */}
+              {/* Trust Logos */}
               <div className="flex items-center space-x-3 sm:space-x-4">
-                {/* Singapore Enterprise Badge */}
-                <div className="flex items-center space-x-2">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-full shadow-md flex items-center justify-center">
-                    <span className="text-xs font-bold text-gray-600">SE</span>
-                  </div>
-                  <div className="text-xs text-gray-500 hidden sm:block">
-                    <div className="font-bold">SINGAPORE'S</div>
-                    <div>ENTERPRISE</div>
-                  </div>
-                </div>
-
-                {/* Review Badge */}
-                <div className="flex items-center space-x-2">
-                  <div className="w-6 h-5 sm:w-8 sm:h-6 bg-blue-600 rounded flex items-center justify-center">
-                    <span className="text-white text-xs font-bold">ML</span>
-                  </div>
-                  <div className="text-xs hidden sm:block">
-                    <div className="font-bold text-blue-600">Moneylender</div>
-                    <div className="text-green-500">Review</div>
-                  </div>
-                </div>
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F059469419a6e42e4b9f17b418abfa1f3%2Fa5ba9153f92f4acabaeb2a584e001ca2?format=webp&width=120"
+                  alt="Trust Badge 1"
+                  className="h-10 sm:h-12 w-auto object-contain"
+                />
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F059469419a6e42e4b9f17b418abfa1f3%2F07d0ae4cb58747efb1366f30c13e2856?format=webp&width=120"
+                  alt="Trust Badge 2"
+                  className="h-10 sm:h-12 w-auto object-contain"
+                />
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F059469419a6e42e4b9f17b418abfa1f3%2F54354432dbcd4749b96ecff398930598?format=webp&width=120"
+                  alt="Trust Badge 3"
+                  className="h-10 sm:h-12 w-auto object-contain"
+                />
               </div>
             </div>
 
@@ -54,21 +60,8 @@ export default function HeroSection() {
             </p>
           </div>
 
-          {/* Hero Image */}
-          <div className="relative h-64 sm:h-80 lg:h-96 mt-8 lg:mt-0">
-            <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-3xl transform rotate-3 opacity-10"></div>
-            <div className="relative bg-gradient-to-br from-yellow-400 via-yellow-500 to-orange-400 rounded-3xl h-full flex items-end justify-center overflow-hidden">
-              {/* Placeholder for person image - using a styled div for now */}
-              <div className="w-40 h-48 sm:w-56 sm:h-64 lg:w-64 lg:h-80 bg-gradient-to-t from-yellow-600 to-yellow-300 rounded-t-full opacity-70 relative">
-                <div className="absolute top-4 sm:top-6 lg:top-8 left-1/2 transform -translate-x-1/2 w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-yellow-200 rounded-full"></div>
-                <div className="absolute top-12 sm:top-16 lg:top-20 left-1/2 transform -translate-x-1/2 w-10 h-14 sm:w-11 sm:h-16 lg:w-12 lg:h-20 bg-yellow-300 rounded-lg"></div>
-                <div className="absolute top-20 sm:top-26 lg:top-32 left-1/2 transform -translate-x-1/2 w-14 h-8 sm:w-16 sm:h-10 lg:w-20 lg:h-12 bg-white rounded-lg opacity-80"></div>
-              </div>
-
-              {/* City skyline background */}
-              <div className="absolute bottom-0 left-0 right-0 h-20 sm:h-24 lg:h-32 bg-gradient-to-t from-blue-200 to-transparent opacity-30"></div>
-            </div>
-          </div>
+          {/* Right side - empty to let background image show */}
+          <div className="hidden lg:block"></div>
         </div>
       </div>
     </section>
