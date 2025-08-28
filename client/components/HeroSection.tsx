@@ -17,19 +17,19 @@ export default function HeroSection() {
             </div>
 
             {/* Apply Now Button */}
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-              <button className="bg-gold hover:bg-gold-border text-navy-dark px-8 py-3 rounded-full text-lg font-bold font-inter transition-colors shadow-lg hover:shadow-xl">
+            <div className="flex flex-col sm:flex-row items-center sm:items-center gap-4 lg:justify-start justify-center">
+              <button className="bg-gold hover:bg-gold-border text-navy-dark px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg font-bold font-inter transition-colors shadow-lg hover:shadow-xl">
                 Apply Now
               </button>
-              
+
               {/* Trust Indicators */}
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-3 sm:space-x-4">
                 {/* Singapore Enterprise Badge */}
                 <div className="flex items-center space-x-2">
-                  <div className="w-12 h-12 bg-white rounded-full shadow-md flex items-center justify-center">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-full shadow-md flex items-center justify-center">
                     <span className="text-xs font-bold text-gray-600">SE</span>
                   </div>
-                  <div className="text-xs text-gray-500">
+                  <div className="text-xs text-gray-500 hidden sm:block">
                     <div className="font-bold">SINGAPORE'S</div>
                     <div>ENTERPRISE</div>
                   </div>
@@ -37,10 +37,10 @@ export default function HeroSection() {
 
                 {/* Review Badge */}
                 <div className="flex items-center space-x-2">
-                  <div className="w-8 h-6 bg-blue-600 rounded flex items-center justify-center">
+                  <div className="w-6 h-5 sm:w-8 sm:h-6 bg-blue-600 rounded flex items-center justify-center">
                     <span className="text-white text-xs font-bold">ML</span>
                   </div>
-                  <div className="text-xs">
+                  <div className="text-xs hidden sm:block">
                     <div className="font-bold text-blue-600">Moneylender</div>
                     <div className="text-green-500">Review</div>
                   </div>
