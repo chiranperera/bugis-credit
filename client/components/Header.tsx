@@ -8,7 +8,7 @@ export default function Header() {
     <header className="relative">
       {/* Top Banner */}
       <div className="bg-navy-dark text-center py-2 px-4">
-        <p className="text-xs text-gray-300 font-inter font-bold">
+        <p className="text-xs sm:text-sm text-gray-300 font-inter font-bold leading-relaxed">
           Bugis Credit Pte Ltd is a licensed moneylender (License No. 27/2025) listed in the Registry of Moneylenders, under the Ministry of Law in Singapore.
         </p>
       </div>
