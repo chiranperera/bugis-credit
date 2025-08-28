@@ -6,9 +6,9 @@ export default function Header() {
 
   return (
     <header className="relative">
-      {/* Top Banner */}
-      <div className="bg-navy-dark text-center py-2 px-4">
-        <p className="text-xs sm:text-sm text-gray-300 font-inter font-bold leading-relaxed">
+      {/* Top Banner - Hidden on mobile */}
+      <div className="hidden sm:block bg-navy-dark text-center py-2 px-4">
+        <p className="text-gray-300 font-inter leading-relaxed" style={{fontSize: '0.9rem', fontWeight: '400'}}>
           Bugis Credit Pte Ltd is a licensed moneylender (License No. 27/2025)
           listed in the Registry of Moneylenders, under the Ministry of Law in
           Singapore.
@@ -18,64 +18,51 @@ export default function Header() {
       {/* Main Header */}
       <div className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-[74px]">
             {/* Logo */}
-            <div className="flex items-center space-x-2 sm:space-x-3">
-              <div className="w-10 h-10 sm:w-11 sm:h-11 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-base sm:text-lg">
-                  B
-                </span>
-              </div>
-              <div className="flex flex-col">
-                <div className="flex items-center space-x-1">
-                  <span className="text-xl sm:text-2xl font-bold text-navy-dark font-inter">
-                    Bugis
-                  </span>
-                  <span className="text-xl sm:text-2xl font-normal text-navy-light font-inter">
-                    Credit
-                  </span>
-                </div>
-                <span className="text-xs text-gray-400 font-inter uppercase tracking-wide hidden sm:block">
-                  Licensed Moneylender Since 2007
-                </span>
-              </div>
+            <div className="flex items-center">
+              <img 
+                src="/Bugis-Credit-Logo-Black-V2.png" 
+                alt="Bugis Credit Logo" 
+                className="h-8 sm:h-10 w-auto"
+              />
             </div>
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
               <a
                 href="#"
-                className="flex items-center space-x-1 text-gray-600 hover:text-navy text-sm font-medium font-inter transition-colors"
+                className="flex items-center space-x-1 text-gray-600 hover:text-navy text-sm font-inter transition-colors" style={{fontWeight: '400'}}
               >
                 <span>Home</span>
               </a>
               <a
                 href="#"
-                className="text-gray-600 hover:text-navy text-sm font-medium font-inter transition-colors"
+                className="text-gray-600 hover:text-navy text-sm font-inter transition-colors" style={{fontWeight: '400'}}
               >
                 About Us
               </a>
               <a
                 href="#"
-                className="text-gray-600 hover:text-navy text-sm font-medium font-inter transition-colors"
+                className="text-gray-600 hover:text-navy text-sm font-inter transition-colors" style={{fontWeight: '400'}}
               >
                 Types Of Loans
               </a>
               <a
                 href="#"
-                className="text-gray-600 hover:text-navy text-sm font-medium font-inter transition-colors"
+                className="text-gray-600 hover:text-navy text-sm font-inter transition-colors" style={{fontWeight: '400'}}
               >
                 Portfolio
               </a>
               <a
                 href="#"
-                className="text-gray-600 hover:text-navy text-sm font-medium font-inter transition-colors"
+                className="text-gray-600 hover:text-navy text-sm font-inter transition-colors" style={{fontWeight: '400'}}
               >
                 Blog
               </a>
               <a
                 href="#"
-                className="text-gray-600 hover:text-navy text-sm font-medium font-inter transition-colors"
+                className="text-gray-600 hover:text-navy text-sm font-inter transition-colors" style={{fontWeight: '400'}}
               >
                 Contact
               </a>
@@ -104,37 +91,37 @@ export default function Header() {
             <div className="px-4 py-3 space-y-3">
               <a
                 href="#"
-                className="block text-gray-600 hover:text-navy text-sm font-medium font-inter"
+                className="block text-gray-600 hover:text-navy text-sm font-inter" style={{fontWeight: '400'}}
               >
                 Home
               </a>
               <a
                 href="#"
-                className="block text-gray-600 hover:text-navy text-sm font-medium font-inter"
+                className="block text-gray-600 hover:text-navy text-sm font-inter" style={{fontWeight: '400'}}
               >
                 About Us
               </a>
               <a
                 href="#"
-                className="block text-gray-600 hover:text-navy text-sm font-medium font-inter"
+                className="block text-gray-600 hover:text-navy text-sm font-inter" style={{fontWeight: '400'}}
               >
                 Types Of Loans
               </a>
               <a
                 href="#"
-                className="block text-gray-600 hover:text-navy text-sm font-medium font-inter"
+                className="block text-gray-600 hover:text-navy text-sm font-inter" style={{fontWeight: '400'}}
               >
                 Portfolio
               </a>
               <a
                 href="#"
-                className="block text-gray-600 hover:text-navy text-sm font-medium font-inter"
+                className="block text-gray-600 hover:text-navy text-sm font-inter" style={{fontWeight: '400'}}
               >
                 Blog
               </a>
               <a
                 href="#"
-                className="block text-gray-600 hover:text-navy text-sm font-medium font-inter"
+                className="block text-gray-600 hover:text-navy text-sm font-inter" style={{fontWeight: '400'}}
               >
                 Contact
               </a>

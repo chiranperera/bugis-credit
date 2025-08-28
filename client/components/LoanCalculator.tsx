@@ -62,7 +62,7 @@ export default function LoanCalculator() {
   return (
     <section className="bg-gray-50 py-12 sm:py-16 -mt-[120px] relative z-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+        <div className="bg-white rounded-2xl shadow-xl overflow-hidden -mt-16 sm:-mt-20 md:-mt-24 lg:-mt-[120px]">
           <div className="p-6 sm:p-8 lg:p-12">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-navy-dark text-center mb-6 sm:mb-8 font-dm-sans">
               Get a Credible Loan
@@ -191,7 +191,7 @@ export default function LoanCalculator() {
         </div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         .loan-slider::-webkit-slider-thumb {
           appearance: none;
           height: 20px;

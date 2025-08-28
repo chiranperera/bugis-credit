@@ -156,3 +156,14 @@
       sans-serif;
   }
 }
+
+@layer utilities {
+  .font-semibold {
+    font-weight: 500;
+  }
+  
+  .text-sm {
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
+}
