@@ -59,7 +59,7 @@ export default function LoanCalculator() {
   };
 
   return (
-    <section className="bg-gray-50 py-12 sm:py-16">
+    <section className="bg-gray-50 py-12 sm:py-16 -mt-[120px] relative z-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
           <div className="p-6 sm:p-8 lg:p-12">
