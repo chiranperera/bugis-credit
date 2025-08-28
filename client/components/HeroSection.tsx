@@ -4,7 +4,7 @@ export default function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="https://cdn.builder.io/api/v1/image/assets%2F059469419a6e42e4b9f17b418abfa1f3%2Fc21dac515cdc4a5090590166431634af?format=webp&width=1920"
+          src="https://cdn.builder.io/api/v1/image/assets%2F059469419a6e42e4b9f17b418abfa1f3%2Fa015cec1c09f41dba0b9b85510b152f3?format=webp&width=1920"
           alt="Hero Background"
           className="w-full h-full object-cover object-right"
         />
