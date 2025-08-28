@@ -18,16 +18,16 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <div className="flex items-center space-x-3">
-              <div className="w-11 h-11 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">B</span>
+            <div className="flex items-center space-x-2 sm:space-x-3">
+              <div className="w-10 h-10 sm:w-11 sm:h-11 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-base sm:text-lg">B</span>
               </div>
               <div className="flex flex-col">
                 <div className="flex items-center space-x-1">
-                  <span className="text-2xl font-bold text-navy-dark font-inter">Bugis</span>
-                  <span className="text-2xl font-normal text-navy-light font-inter">Credit</span>
+                  <span className="text-xl sm:text-2xl font-bold text-navy-dark font-inter">Bugis</span>
+                  <span className="text-xl sm:text-2xl font-normal text-navy-light font-inter">Credit</span>
                 </div>
-                <span className="text-xs text-gray-400 font-inter uppercase tracking-wide">
+                <span className="text-xs text-gray-400 font-inter uppercase tracking-wide hidden sm:block">
                   Licensed Moneylender Since 2007
                 </span>
               </div>
