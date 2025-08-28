@@ -104,7 +104,10 @@ export default function LoanCalculator() {
                         max="60"
                         value={loanTerm}
                         onChange={(e) => setLoanTerm(Number(e.target.value))}
-                        className="w-full h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer slider"
+                        className="w-full h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer loan-slider"
+                        style={{
+                          background: `linear-gradient(to right, hsl(var(--gold)) 0%, hsl(var(--gold)) ${((loanTerm - 3) / (60 - 3)) * 100}%, #e5e7eb ${((loanTerm - 3) / (60 - 3)) * 100}%, #e5e7eb 100%)`
+                        }}
                       />
                       <div className="flex justify-between text-sm text-gray-500 mt-2 font-dm-sans font-semibold">
                         <span>3 Months</span>
